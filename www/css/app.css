@@ -1,0 +1,46 @@
+/*
+ * Front-end developer test AngularJS, v1.0a.
+ *
+ * CSS Styles
+ *
+ * Written by Raymond Vrolijk
+ */
+
+@font-face {
+    font-family: 'tele-groteskfetregular';
+    src: url('fonts/telegroteskfet-webfont.eot');
+    src: url('fonts/telegroteskfet-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/telegroteskfet-webfont.woff') format('woff'), url('fonts/telegroteskfet-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+label, input {
+  display: block;
+}
+
+label {
+  margin: 10px 0px 5px 0px;
+}
+
+form {
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease 0s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -290px;
+  margin-top: -262px;
+  padding: 40px;
+  width: 498px;
+  height: 522px;
+}
+
+input[type=text] {
+  background-clip: padding-box;
+  background-color: #fcfcfc;
+  border: 1px solid #b6b6b6;
+  border-radius: 3px;
+  padding: 13px;
+  width: 458px;
+}
