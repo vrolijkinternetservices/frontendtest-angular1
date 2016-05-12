@@ -30,10 +30,10 @@ form {
   top: 50%;
   left: 50%;
   margin-left: -290px;
-  margin-top: -262px;
+  margin-top: -356px;
   padding: 40px;
   width: 498px;
-  height: 522px;
+  height: 632px;
 }
 
 input[type=text] {
@@ -43,4 +43,54 @@ input[type=text] {
   border-radius: 3px;
   padding: 13px;
   width: 458px;
+}
+
+input[type=submit] {
+  background-color: #e20074;
+  border-bottom-color: #af005a;
+  color: #fff;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  background-clip: padding-box;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 0 0 2px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.7rem;
+  height: 45px;
+  line-height: 45px;
+  outline: 0 none;
+  overflow: hidden;
+  padding: 0 15px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: background-color 0.2s ease 0s;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+  float: left;
+  margin-top: 20px;
+}
+
+input[type=submit]:hover {
+  background-color: #af005a;
+  border-color: #95004d;
+}
+
+label {
+  display: block;
+  color: #333;
+  display: block;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.error {
+  color: red;
+}
+
+input.ng-invalid {
+  border: 1px solid red;
 }
