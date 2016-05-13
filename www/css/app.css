@@ -94,3 +94,9 @@ label {
 input.ng-invalid {
   border: 1px solid red;
 }
+
+p.successful {
+  clear: both;
+  padding-top: 20px;
+  color: green;
+}

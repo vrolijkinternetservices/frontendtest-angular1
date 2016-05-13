@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="frontendApp">
 <head>
+  <title>Frontend test</title>
   <script src="http://localhost:35729/livereload.js"></script> 
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   <script src="js/app.js"></script>
@@ -8,9 +9,9 @@
 </head>
 <body>
 
-  <form name="userForm" method="post" ng-controller="frontendCtrl">
+  <form name="userForm" ng-controller="frontendCtrl">
     <label for="postalcode">Postalcode</label>
-    <input type="text" name="postalcode" id="postalcode" required ng-model="data.postalcode" ng-pattern="/^\d{4} ?[a-z]{2}$/" />
+    <input type="text" name="postalcode" id="postalcode" required ng-model="data.postalcode" ng-pattern="/^\d{4} ?[a-z]{2}$/i" />
     <p class="error" ng-if="userForm.postalcode.$error.pattern">Postalcode is invalid.</p>
     <p class="error" ng-if="userForm.postalcode.$error.required">Postalcode is required.</p>
     
@@ -28,7 +29,8 @@
     <input type="text" name="city" id="city" required ng-model="data.city" ng-pattern="/amsterdam/i"/>
     <p class="error" ng-if="userForm.city.$error.required">City is required.</p>
     <p class="error" ng-if="userForm.city.$error.pattern">City should be 'Amsterdam'</p>
-    <input type="submit" value="Send" />    
+    <input type="submit" value="Send" ng-disabled="!userForm.$valid" />  
+    <p class="successful" ng-show="userForm.$submitted">The form has been successfully submitted</p>
   </form>
 
 </body>
